@@ -14,7 +14,7 @@ int main() {
     char code1[3], code2[3];
     char cid1[50], cid2[50];
     int pop1, pop2, pontos1, pontos2;
-    float pib1, pib2, area1, area2;
+    float pib1, pib2, area1, area2, dens1, dens2, capita1, capita2;
 
         printf("Bem vindo ao jogo Super Trunfo!\n");
 
@@ -86,14 +86,23 @@ int main() {
 
             printf("\n");
 
+        dens1 = (float) pop1 / area1; //Realizando conversão de tipo de dados para evitar erros no resultado. 
+        dens2 = (float) pop2 / area2; //Calculo da densidade demográfica da carta 1/2.
+
+        capita1 = (float) pib1 / pop1; 
+        capita2 = (float) pib2 / pop2;  //Calculo do PIB per Capita da carta 1/2. 
+
         printf("Sua carta 1 (%c%s) foi cadastrada com sucesso, segue abaixo as informações: \n", estado1, code1); //Aqui se inicia a saída dos dados cadastrados pelo usuário.
         printf("Estado: %c\n", estado1);
         printf("Código: %c%s\n", estado1, code1);
         printf("Nome da cidade: %s\n", cid1);
         printf("População: %d\n", pop1);
         printf("Área: %.2f Km².\n", area1);
-        printf("PIB: %.2f bilhões de Reais.\n", pib1);
+        printf("A densidade demográfica é de: %.3f", dens1);
+        printf("PIB: %.2f \n", pib1);
+        printf("O PIB per Capita é de: %.3f Reais", capita1);
         printf("Número de pontos turísticos: %d\n", pontos1);
+        
 
             printf("\n");
 
@@ -103,7 +112,9 @@ int main() {
         printf("Nome da cidade: %s\n", cid2);
         printf("População: %d\n", pop2);
         printf("Área : %.2f Km²\n", area2);
-        printf("PIB: %.2f bilhões de Reais.\n", pib2);
+        printf("A densidade demográfica é de: %.3f", dens2);
+        printf("PIB: %.2f.\n", pib2);
+        printf("O PIB per Capita é de: %.3f Reais", capita2);
         printf("Número de pontos turísticos: %d\n", pontos2);
     
 
