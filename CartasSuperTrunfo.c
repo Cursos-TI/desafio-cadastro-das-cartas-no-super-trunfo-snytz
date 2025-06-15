@@ -94,8 +94,8 @@ int main() {
         capita1 = (float) (pib1 * 1000000000) / pop1; 
         capita2 = (float) (pib2 * 1000000000) / pop2;  //Calculo do PIB per Capita da carta 1/2. 
 
-        superpoder1 = (float) (pop1 + area1 + pib1 + capita1 + pontos1) - dens1; 
-        superpoder2 = (float) (pop2 + area2 + pib2 + capita2 + pontos2) - dens2; //Calculo do Super Poder 1 e 2. 
+        superpoder1 = (float) (pop1 + area1 + pib1 + capita1 + pontos1) + 1 / dens1; 
+        superpoder2 = (float) (pop2 + area2 + pib2 + capita2 + pontos2) + 1 / dens2; //Calculo do Super Poder 1 e 2. 
 
         //Abaixo estão as informações das cartas junto aos resultados das comparações.
         printf("Sua carta 1 (%c%s) foi cadastrada com sucesso, segue abaixo as informações: \n", estado1, code1); //Aqui se inicia a saída dos dados cadastrados pelo usuário.
