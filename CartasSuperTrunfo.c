@@ -91,7 +91,7 @@ int main() {
         dens1 = (float) pop1 / area1; //Realizando conversão de tipo de dados para evitar erros no resultado. 
         dens2 = (float) pop2 / area2; //Calculo da densidade demográfica da carta 1/2.
 
-        capita1 = (float) (pib1 * 1000000000) / pop1; 
+        capita1 = (float) (pib1 * 1000000000) / pop1;  //Multipliquei por 1B pois achei que seria mais prático para o usuário, seria difultoso sempre ter que digitar o número completo, várias cidades tem mais de 1B de pib.
         capita2 = (float) (pib2 * 1000000000) / pop2;  //Calculo do PIB per Capita da carta 1/2. 
 
         superpoder1 = (float) (pop1 + area1 + pib1 + capita1 + pontos1) + 1 / dens1; 
