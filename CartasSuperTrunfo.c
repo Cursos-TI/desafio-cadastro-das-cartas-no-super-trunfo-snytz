@@ -102,7 +102,7 @@ int main() {
         printf("Estado: %c\n", estado1);
         printf("Código: %c%s\n", estado1, code1);
         printf("Nome da cidade: %s\n", cid1);
-        printf("População: %u, carta 1 venceu: %d \n", pop1, pop1 > pop2);
+        printf("População: %u, carta 1 venceu: %d \n", pop1, pop1 > pop2); //Optei por fazer a comparação na própria linha de retorno das informações das cartas para evitar gerar mais uma linha só para as comparações.
         printf("Área: %.2f Km², carta 1 venceu: %d \n", area1, area1 > area2);
         printf("A densidade demográfica é de: %.3f, carta 1 venceu: %d\n", dens1, dens1 < dens2);
         printf("PIB: %.2f, carta 1 venceu: %d \n", pib1 * 1000000000, pib1 > pib2);
