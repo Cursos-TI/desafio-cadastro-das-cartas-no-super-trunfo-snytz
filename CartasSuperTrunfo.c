@@ -98,9 +98,9 @@ int main() {
         printf("Nome da cidade: %s\n", cid1);
         printf("População: %d\n", pop1);
         printf("Área: %.2f Km².\n", area1);
-        printf("A densidade demográfica é de: %.3f", dens1);
-        printf("PIB: %.2f \n", pib1);
-        printf("O PIB per Capita é de: %.3f Reais", capita1);
+        printf("A densidade demográfica é de: %.3f\n", dens1);
+        printf("PIB: %.2f. \n", pib1);
+        printf("O PIB per Capita é de: %.3f Reais.\n", capita1);
         printf("Número de pontos turísticos: %d\n", pontos1);
         
 
@@ -112,9 +112,9 @@ int main() {
         printf("Nome da cidade: %s\n", cid2);
         printf("População: %d\n", pop2);
         printf("Área : %.2f Km²\n", area2);
-        printf("A densidade demográfica é de: %.3f", dens2);
-        printf("PIB: %.2f.\n", pib2);
-        printf("O PIB per Capita é de: %.3f Reais", capita2);
+        printf("A densidade demográfica é de: %.3f\n", dens2);
+        printf("PIB: %.2f.\n.", pib2);
+        printf("O PIB per Capita é de: %.3f Reais.\n", capita2);
         printf("Número de pontos turísticos: %d\n", pontos2);
     
 
