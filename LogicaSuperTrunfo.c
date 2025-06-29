@@ -130,8 +130,9 @@ int main() {
 
           if (pib1 > pib2) {
             printf("A carta vencedora é a carta de código: %c%s \n", estado1, code1); //Adicionei ao final do programa o resultado da comparação
-          } else printf("A carta vencedora é a carta de código: %c%s \n", estado2, code2);
-    
+          } else {
+              printf("A carta vencedora é a carta de código: %c%s \n", estado2, code2);
+          }
 
     return 0;
 }
