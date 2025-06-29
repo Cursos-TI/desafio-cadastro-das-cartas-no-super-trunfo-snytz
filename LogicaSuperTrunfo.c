@@ -101,14 +101,14 @@ int main() {
         printf("Sua carta 1 (%c%s) foi cadastrada com sucesso, segue abaixo as informações: \n", estado1, code1); //Aqui se inicia a saída dos dados cadastrados pelo usuário.
         printf("Estado: %c\n", estado1);
         printf("Código: %c%s\n", estado1, code1);
-        printf("Nome da cidade: %s\n", cid1);
-        printf("População: %u, carta 1 venceu: %d \n", pop1, pop1 > pop2); //Optei por fazer a comparação na própria linha de retorno das informações das cartas para evitar gerar mais uma linha só para as comparações.
-        printf("Área: %.2f Km², carta 1 venceu: %d \n", area1, area1 > area2);
-        printf("A densidade demográfica é de: %.3f, carta 1 venceu: %d\n", dens1, dens1 < dens2);
-        printf("PIB: %.2f, carta 1 venceu: %d \n", pib1 * 1000000000, pib1 > pib2);
-        printf("O PIB per Capita é de: %.3f Reais, carta 1 venceu: %d \n", capita1, capita1 > capita2);
-        printf("Número de pontos turísticos: %d, carta 1 venceu: %d \n", pontos1, pontos1 > pontos2);
-        printf("O Super Poder é %.3f, carta 1 venceu: %d \n", superpoder1, superpoder1 > superpoder2);
+        printf("Nome da cidade: %s\n", cid1); 
+        printf("População: %u.\n", pop1); //Como nesse módulo vamos utilizar estruturass de escolha retirei as comparações em linha do projeto anterior. 
+        printf("Área : %.2f Km².\n", area1);
+        printf("A densidade demográfica é de: %.3f.\n", dens1);
+        printf("PIB: %.2f.\n", pib1);
+        printf("O PIB per Capita é de: %.3f Reais.\n", capita1);
+        printf("Número de pontos turísticos: %d.\n", pontos1);
+        printf("O Super Poder é %.3f.", superpoder1);
 
             printf("\n");
 
@@ -116,19 +116,21 @@ int main() {
         printf("Estado: %c\n", estado2);
         printf("Código: %c%s\n", estado2, code2);
         printf("Nome da cidade: %s\n", cid2);
-        printf("População: %u, carta 2 venceu: %d\n", pop2, pop2 > pop1);
-        printf("Área : %.2f Km², carta 2 venceu: %d\n", area2, area2 > area1);
-        printf("A densidade demográfica é de: %.3f, carta 2 venceu: %d \n", dens2, dens2 < dens1);
-        printf("PIB: %.2f, carta 2 venceu: %d \n", pib2 * 1000000000, pib2 > pib1);
-        printf("O PIB per Capita é de: %.3f Reais, carta 2 venceu: %d: \n", capita2, capita2 > capita1);
-        printf("Número de pontos turísticos: %d, carta 2 venceu: %d \n", pontos2, pontos2 > pontos1);
-        printf("O Super Poder é %.3f, carta 2 venceu: %d \n", superpoder2, superpoder2 > superpoder1);
+        printf("População: %u.\n", pop2);
+        printf("Área : %.2f Km².\n", area2);
+        printf("A densidade demográfica é de: %.3f.\n", dens2);
+        printf("PIB: %.2f.\n", pib2);
+        printf("O PIB per Capita é de: %.3f Reais.\n", capita2);
+        printf("Número de pontos turísticos: %d.\n", pontos2);
+        printf("O Super Poder é %.3f.", superpoder2);
 
-          printf("Será utilizado o PIB para apontar a carta vencedora!");
+          printf("Será utilizado o PIB para apontar a carta vencedora!\n"); //Gerei um texto para nortear o usuário para que ele fique ciente do critério de vitória.
           
+          printf("\n");
+
           if (pib1 > pib2) {
-            printf("A carta vencedora é a carta de código: %c$s \n", estado1, code1);
-          } else printf("A carta vencedora é a carta de código: %c$s \n", estado2, code2);
+            printf("A carta vencedora é a carta de código: %c%s \n", estado1, code1); //Adicionei ao final do programa o resultado da comparação
+          } else printf("A carta vencedora é a carta de código: %c%s \n", estado2, code2);
     
 
     return 0;
